@@ -26,7 +26,7 @@ var repository = app.models['repository'];
 
 
 User.create([
-  {username: '{{ admin.username }}', email: '{{admin.email}}', password: '{{ admin.password }}'}
+  {username: '{{ admin.username }}', email: '{{admin.email}}', password: '{{ admin.password  | default("testing")}}'}
 ], function (err, users) {
   if (err) {
     console.log("Error:",err);
