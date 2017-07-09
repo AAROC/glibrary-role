@@ -3,6 +3,10 @@
     repo: "{{ glibrary_repo }}"
     dest: "{{ exec_dir }}"
 
+- name: install node packages
+  npm:
+    path: "{{ exec_dir }}"
+
 - name: template the configuration
   template:
     src: "{{ item }}.j2"
