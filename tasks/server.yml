@@ -18,4 +18,4 @@
 
 - name: "Start example Node.js app."
   command: "forever start {{ exec_dir }}/server/server.js"
-  when: "forever_list.stdout.find('{{ exec_dir/server/server.js }}') == -1"
+  when: "forever_list.stdout.find('{{ exec_dir }}/server/server.js') == -1"
