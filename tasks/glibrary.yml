@@ -2,3 +2,9 @@
   git:
     repo: "{{ glibrary_repo }}"
     dest: "{{ exec_dir }}"
+
+- name: template the configuration
+  template:
+    src: "{{ item }}.j2"
+    dest: "{{ exec_dir }}/server/bin/{{ item }}"
+  with_items: "{{ setup_scripts }}"

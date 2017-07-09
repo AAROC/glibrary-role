@@ -15,6 +15,12 @@ glibrary_repo: https://github.com/AAROC/glibrary
 # where will the code be run from ?
 exec_dir: /opt/glibrary
 
+# The list of setup scripts that need to be templated
+setup_scripts:
+  - createAdmin.js
+  - createRoles.js
+  - createACLRules.js
+  
 admin:
   username: admin
   email: glibrary-admin@africa-grid.org
