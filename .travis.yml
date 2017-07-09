@@ -25,7 +25,7 @@ script:
   # Basic role syntax check
   - ansible-galaxy install AAROC.glibrary-role
   - ansible-playbook -c local tests/test.yml -i tests/inventory --syntax-check
-  - ansible-playbook -c local tests/test.yml -i tests/inventory
+  - ansible-playbook -c local tests/test.yml -i tests/inventory -e admin.password=testing
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/

@@ -20,7 +20,7 @@ setup_scripts:
   - createAdmin.js
   - createRoles.js
   - createACLRules.js
-  
+
 admin:
   username: admin
   email: glibrary-admin@africa-grid.org
