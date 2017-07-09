@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AAROC/glibrary-role.svg?branch=master)](https://travis-ci.org/AAROC/glibrary-role)
+
 gLibrary
 =========
 
@@ -6,10 +8,14 @@ This role deploys  and configures a gLibrary instance which can be configured fo
 Requirements
 ------------
 
-none.
+The role requires `git` and `node`
 
 Role Variables
 --------------
+
+Variables are split between `main.yml`, `passwords.yml` and `defaults.yml`.
+Passwords are included in a task, and vault-encrypted.
+
 
 Dependencies
 ------------

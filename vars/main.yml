@@ -1,5 +1,19 @@
 ---
 # vars file for AAROC.glibrary
+
+# System prerequisites
+prerequisites:
+  RedHat:
+    - mongo
+    - nodejs
+  Debian:
+    - mongo
+    - nodejs
+# Which fork of glibrary are  we using ?
+glibrary_repo: https://github.com/AAROC/glibrary
+# where will the code be run from ?
+exec_dir: /opt/glibrary
+
 admin:
   username: admin
   email: glibrary-admin@africa-grid.org

@@ -1,0 +1,4 @@
+- name: Clone the glibrary repo
+  git:
+    repo: "{{ glibrary_repo }}"
+    dest: "{{ exec_dir }}"
