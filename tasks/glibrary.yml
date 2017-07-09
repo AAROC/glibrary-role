@@ -12,3 +12,8 @@
     src: "{{ item }}.j2"
     dest: "{{ exec_dir }}/server/bin/{{ item }}"
   with_items: "{{ setup_scripts }}"
+
+- name: template datasources
+  template:
+    src: "datasources.json.j2"
+    dest: "{{ exec_dir }}/datasources.json"

@@ -24,3 +24,12 @@ setup_scripts:
 admin:
   username: admin
   email: glibrary-admin@africa-grid.org
+
+repo:
+  host: localhost
+  port: 27017
+  database: glibrary
+  username: glibrary
+  password: glibrary
+  name: repoDB
+  connector: mongodb
