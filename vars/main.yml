@@ -7,8 +7,9 @@ prerequisites:
     - mongo
     - nodejs
   Debian:
-    - mongo
+    - mongodb-org
     - nodejs
+    - npm
 # Which fork of glibrary are  we using ?
 glibrary_repo: https://github.com/AAROC/glibrary
 # where will the code be run from ?

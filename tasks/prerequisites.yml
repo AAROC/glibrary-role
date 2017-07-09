@@ -2,4 +2,4 @@
   package:
     name:  "{{ item }}"
     state: present
-  with_items: "{{ prerequisites.ansible_os_family }}"
+  with_items: "{{ prerequisites[ansible_os_family] }}"
