@@ -8,7 +8,7 @@ This role deploys  and configures a gLibrary instance which can be configured fo
 Requirements
 ------------
 
-The role requires `git` and `node`
+The role requires `git` and `node` (nodejs, npm)
 
 Role Variables
 --------------
