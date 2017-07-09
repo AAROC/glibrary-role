@@ -1,0 +1,8 @@
+- name: Get list of forever tasks
+  command: forever list
+  register: forever_list
+  changed_when: false
+
+- name: "Start example Node.js app."
+  command: "forever start {{ exec_dir }}/server/server.js"
+  when: "forever_list.stdout.find('{{ exec_dir/server/server.js }}') == -1"

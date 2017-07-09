@@ -2,3 +2,4 @@
 # tasks file for AAROC.glibrary
 - include: prerequisites.yml
 - include: glibrary.yml
+- include: server.yml
