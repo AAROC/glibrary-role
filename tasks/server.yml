@@ -3,7 +3,7 @@
   npm:
     name: forever
     global: yes
-    state: latest
+    state: present
 
 - name: Get list of forever tasks
   command: forever list
