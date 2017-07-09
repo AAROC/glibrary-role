@@ -1,2 +1,5 @@
 ---
 # vars file for AAROC.glibrary
+admin:
+  username: admin
+  email: glibrary-admin@africa-grid.org
