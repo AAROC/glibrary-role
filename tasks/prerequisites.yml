@@ -35,5 +35,5 @@
   become: true
   apt:
     name: "nodejs={{ nodejs_version|regex_replace('x', '') }}*"
-    state: present"
+    state: present
   when: ansible_os_family == 'Debian'
