@@ -1,7 +1,9 @@
 - name: Install forever
   npm:
     name: forever
+    global: yes
     state: latest
+
 - name: Get list of forever tasks
   command: forever list
   register: forever_list
