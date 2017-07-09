@@ -2,14 +2,15 @@
 # vars file for AAROC.glibrary
 
 # System prerequisites
+nodejs_version: 6.x
+
 prerequisites:
   RedHat:
     - mongo
     - nodejs
   Debian:
     - mongodb-org
-    - nodejs
-    - npm
+    - apt-transport-https
 # Which fork of glibrary are  we using ?
 glibrary_repo: https://github.com/AAROC/glibrary
 # where will the code be run from ?
