@@ -33,7 +33,7 @@ User.create([
     process.exit(-1)
   }
   console.log('Users created', users);
-  User.findOne({where: {email: 'admin@ct.infn.it'}}, function (err, user) {
+  User.findOne({where: {email: '{{ admin.email }}'}}, function (err, user) {
     if (err) throw err;
     if (user) {
       console.log("User:", user)
@@ -47,12 +47,11 @@ User.create([
 
         }
         console.log("Created role:", role);
-        //make nathan admin
         role.principals.create({
           principalType: RoleMapping.USER,
           principalId: user.id,
-          roleName:"admin",
-          username:"admin@ct.infn.it"
+          roleName:"{{ admin.username }}",
+          username:"{{ admin.email }}"
         }, function (err, principal) {
           if (err) {
             console.log("Error:",err);
