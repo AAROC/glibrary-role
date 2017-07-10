@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/AAROC/glibrary-role.svg?branch=container)](https://travis-ci.org/AAROC/glibrary-role)
 # AAROC.glibrary-role
 
 Adds a glibrary service to your [Ansible Container](https://github.com/ansible/ansible-container) project. Run the following commands
