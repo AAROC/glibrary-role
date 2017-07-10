@@ -1,42 +1,43 @@
-[![Build Status](https://travis-ci.org/AAROC/glibrary-role.svg?branch=master)](https://travis-ci.org/AAROC/glibrary-role)
+# AAROC.glibrary-role
 
-gLibrary
-=========
+Adds a glibrary service to your [Ansible Container](https://github.com/ansible/ansible-container) project. Run the following commands
+to install the service:
 
-This role deploys  and configures a gLibrary instance which can be configured for various types of storage. This role is not container-enabled but should work in a container environment.t
+```
+# Set the working directory to your Ansible Container project root
+$ cd myproject
 
-Requirements
-------------
+# Install the service
+$ ansible-container install AAROC.glibrary-role
+```
 
-The role requires `git` and `node` (nodejs, npm)
+## Requirements
 
-Role Variables
---------------
+- [Ansible Container](https://github.com/ansible/ansible-container)
+- An existing Ansible Container project. To create a project, simply run the following:
+    ```
+    # Create an empty project directory
+    $ mkdir myproject
 
-Variables are split between `main.yml`, `passwords.yml` and `defaults.yml`.
-Passwords are included in a task, and vault-encrypted.
+    # Set the working directory to the new directory
+    $ cd myproject
+
+    # Initialize the project
+    $ ansible-contiainer init
+    ```
 
 
-Dependencies
-------------
+## Role Variables
 
-none
 
-Example Playbook
-----------------
+## Dependencies
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: servers
-      roles:
-         - { role: AAROC.glibrary }
-
-License
--------
+## License
 
 Apache-2.0
 
-Author Information
-------------------
+## Author Information
 
-Written by Bruce Becker, CSIR Meraka Institute, for Africa-Arabia Regional Operations Centre.
+Bruce Becker (CSIR Meraka Institute), for the Africa-Arabia Regional Operations Centre.
+bruce.becker@africa-grid.org
