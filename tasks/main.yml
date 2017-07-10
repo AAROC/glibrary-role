@@ -1,2 +1,3 @@
 ---
 # tasks file for AAROC.glibrary-role
+- include: prerequisites.yml
