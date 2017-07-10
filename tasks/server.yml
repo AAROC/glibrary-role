@@ -1,11 +1,9 @@
-- name: ensure npm is latest
-  become: true
-  npm:
-    name: npm
-    global: true
-    state: latest
+# - name: ensure npm is latest
+#   npm:
+#     name: npm
+#     global: true
+#     state: latest
 - name: Install forever
-  become: true
   npm:
     name: forever
     global: yes
