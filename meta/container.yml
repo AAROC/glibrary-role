@@ -9,3 +9,11 @@
   #   dev_overrides:
   #     environment:
   #       - "DEBUG=1"
+api:
+  image: node:6
+  ports: 80:80
+  command: ['forever','server.js']
+  links: db
+db:
+  image: mongo
+  
