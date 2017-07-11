@@ -23,7 +23,7 @@ admin:
   email: glibrary-admin@africa-grid.org
 
 repo:
-  host: 172.22.0.2
+  host: db
   port: 27017
   database: glibrary
   username: glibrary
