@@ -16,6 +16,10 @@
   register: forever_list
   changed_when: false
 
-- name: "Start example Node.js app."
+- name: Show list of forever tasks.
+  debug:
+    var: forever_list
+
+- name: Start example Node.js app.
   command: "forever start {{ exec_dir }}/server/server.js"
   when: "forever_list.stdout.find('{{ exec_dir }}/server/server.js') == -1"
