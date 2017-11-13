@@ -27,10 +27,10 @@ admin:
   email: glibrary-admin@africa-grid.org
 
 repo:
-  host: localhost
+  host: 172.22.0.2
   port: 27017
   database: glibrary
-  username: glibrary
-  password: glibrary
+  username: ""
+  password: ""
   name: repoDB
   connector: mongodb
