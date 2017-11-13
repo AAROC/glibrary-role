@@ -17,3 +17,7 @@
   template:
     src: "datasources.json.j2"
     dest: "{{ exec_dir }}/server/datasources.json"
+
+- name: Run configuration
+  command: "node {{ item }}"
+  with_items: "{{ setup_scripts}}"
