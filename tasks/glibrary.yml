@@ -20,4 +20,6 @@
 
 - name: Run configuration
   command: "node {{ item }}"
+  args:
+    chdir: "{{ exec_dir }}/bin"
   with_items: "{{ setup_scripts}}"

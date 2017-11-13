@@ -37,3 +37,10 @@
     name: "nodejs={{ nodejs_version|regex_replace('x', '') }}*"
     state: present
   when: ansible_os_family == 'Debian'
+
+- name: ensure npm is latest
+  become: true
+  npm:
+    name: npm
+    global: true
+    state: latest
